@@ -1,2 +1,4 @@
-This is GCSG01's first web repository.
-这是GCSG01的第一个网站库
+***
+This is GCSG01's first web repository.  
+这是 GCSG01 的第一个网站储存库。
+***
