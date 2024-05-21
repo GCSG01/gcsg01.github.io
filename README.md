@@ -1,4 +1,9 @@
-# 方块NBS
+# GCSG01
+欢迎来到GCSG01的小站！
+Welecome to GCSG0!
+
+**项目推广:**
+## 方块NBS
 
 ~~~txt
  ____
