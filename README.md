@@ -22,4 +22,5 @@ Welecome to GCSG0!
 
 **In Github:**
 1.[下载仓库](https://github.com/GCSG01/NBS)
-2.RMCL[https://www.luogu.com.cn/fe/api/problem/downloadAttachment/y076cf2q]
+
+2.[RMCL(新版GUI启动器)](https://www.luogu.com.cn/fe/api/problem/downloadAttachment/y076cf2q)
