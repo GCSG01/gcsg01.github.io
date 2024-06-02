@@ -1,36 +1,58 @@
-# GCSG01
-欢迎来到GCSG01的小站！  
-Welecome to GCSG01!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCSG01</title>
+    <style>
+        body {
+            font-family: "Comic Sans MS", cursive, sans-serif; /* 设置为Comic Sans MS，如果没有该字体，使用cursive，最后使用sans-serif备用字体 */
+            background-color: #000000; /* 科技黑 */
+            color: #ffffff; /* 文字颜色设为白色 */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* 使标题水平居中 */
+            align-items: center; /* 使标题垂直居中 */
+            min-height: 100vh; /* 使body至少占据整个视口高度 */
+        }
+        header {
+            background-color: #333;
+            color: #ffffff; /* 白色 */
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 3em; /* 将字体大小放大至原来的三倍 */
+            cursor: pointer; /* 添加鼠标指针样式 */
+        }
+        #content {
+            margin-top: 20px; /* 将内容向下偏移 */
+            margin-left: 20px; /* 将内容向右偏移 */
+        }
+        .hidden {
+            display: none; /* 初始状态下隐藏内容 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 onclick="toggleContent()">Hi, this is GCSG01.</h1>
+    </header>
+    <div id="content" class="hidden">
+        <p>Welecome to GCSG01.</p>
+        <p>欢迎来到GCSG01的主页</p>
+    </div>
 
-这是我在
-[博客园](https://www.cnblogs.com/GCSG01)
-的地址
+    <script>
+        function toggleContent() {
+            var title = document.querySelector('h1');
+            var content = document.getElementById('content');
 
-你也可以在
-[洛谷](https://www.luogu.com.cn/paste/ncjb1s0k)
-找到我
+            title.style.display = 'none'; // 隐藏标题
+            content.classList.remove('hidden'); // 显示内容
+        }
+    </script>
+</body>
+</html>
 
-我的邮箱:GCSG01@outlook.com
-
-**项目推广:**
-## 方块NBS
-
-~~~txt
- ____
-|/二/\ 方块
-|\__\/ NBS
-~~~
-###### 此频道别名：小白鼠频道
-## 1. 目标
-  ~~为搞颓提供工具~~ 为了Minecraft提供各种便携的工具
-## 2. 工程项目
-**In [LuoGu](www.luogu.com.cn):**
-1. [NBS启动器：纯 **C++** 编写的Minecraft启动器](https://www.luogu.com.cn/problem/T419583)
-2. [Minecraft HTML：通过HTML+HTTP的强力加持将**Minecraft**的代码压缩到20行以内](https://www.luogu.com.cn/problem/T419580)
-3. MCOS：（仅供娱乐），开发的主题是Minecraft的EXEOS，短时间内不公开源代码。
-
-
-**In Github:**
-1.[下载仓库](https://github.com/GCSG01/NBS)
-
-2.[RMCL(新版GUI启动器)](https://www.luogu.com.cn/fe/api/problem/downloadAttachment/y076cf2q)
