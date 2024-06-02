@@ -32,6 +32,6 @@ Welecome to GCSG01!
 
 **In Github:**  
 1.[下载仓库](https://github.com/GCSG01/NBS)  
-2.RMCL(新版GUI启动器):
-下载链接：[https://www.kzwr.com/file/bad679ec](https://www.kzwr.com/file/bad679ec)
+2.RMCL(新版GUI启动器):  
+下载链接：[https://www.kzwr.com/file/bad679ec](https://www.kzwr.com/file/bad679ec)  
 密码：YxAQFR
