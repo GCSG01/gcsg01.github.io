@@ -30,7 +30,8 @@ Welecome to GCSG01!
 3. MCOS：（仅供娱乐），开发的主题是Minecraft的EXEOS，短时间内不公开源代码。
 
 
-**In Github:**
-1.[下载仓库](https://github.com/GCSG01/NBS)
-
-2.[RMCL(新版GUI启动器)](https://www.luogu.com.cn/fe/api/problem/downloadAttachment/y076cf2q)
+**In Github:**  
+1.[下载仓库](https://github.com/GCSG01/NBS)  
+2.RMCL(新版GUI启动器):
+下载链接：[https://www.kzwr.com/file/bad679ec](https://www.kzwr.com/file/bad679ec)
+密码：YxAQFR
