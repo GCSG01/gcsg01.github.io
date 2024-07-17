@@ -13,3 +13,4 @@ Welecome to GCSG01!
 我的邮箱:GCSG01@outlook.com
 
 **项目推广:**
+[方块NBS](https://gcsg01.github.io/NBS)
