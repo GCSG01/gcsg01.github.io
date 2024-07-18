@@ -1,0 +1,281 @@
+<!-- @format -->
+
+<script src="https://blog-static.cnblogs.com/files/guangzan/loader.min.js"></script>
+<script>
+  const opts = {
+    // 基本配置
+    theme: {
+      name: 'geek',
+      //color: '#FFB3CC',
+      color: '#00CED1',
+      title: 'Clivia Du',
+      avatar :'http://img.xjh.me/random_img.php?typ&ctyp&return=302',
+      headerBackground: 'https://cdn.luogu.com.cn/upload/image_hosting/8s897evm.png',
+    },
+    // 代码高亮
+    highLight: {
+      enable: true,
+    },
+    // 代码行号
+    lineNumbers: {
+      enable: true,
+    },
+    // github图标
+    github: {
+      enable: false,
+      url: '',
+    },
+    // 码云图标
+    gitee: {
+      enable: false,
+      url: '',
+    },
+    // 图片灯箱
+    imagebox: {
+      enable: true,
+    },
+    // 文章目录
+    catalog: {
+      enable: true,
+      position:'left'
+    },
+    // 右下角按钮组
+    tools: {
+      enable: true,
+    },
+    // 点击特效
+    click: {
+      enable: true,
+    },
+    // 评论输入框表情
+      emoji: {
+          enable: true,
+          buttonIcon: "🥳",
+          emojiList: [
+              {
+                  value: 'https://images.cnblogs.com/cnblogs_com/gshang/1626876/o_2001050555139.png',
+                  label: '',
+              },
+              {
+                  value: '🤣',
+                  label: '笑哭',
+              },
+              {
+                  value: '😃',
+                  label: '大笑',
+              },
+              {
+                  value: '😅',
+                  label: '苦笑',
+              },
+              {
+                  value: '😆',
+                  label: '斜眼笑',
+              },
+              {
+                  value: '😏',
+                  label: '得意',
+              },
+              {
+                  value: '😊',
+                  label: '微笑',
+              },
+              {
+                  value: '😎',
+                  label: '酷！',
+              },
+              {
+                  value: '😍',
+                  label: '花痴',
+              },
+              {
+                  value: '🙂',
+                  label: '呵呵',
+              },
+              {
+                  value: '🤩',
+                  label: '好崇拜哦',
+              },
+              {
+                  value: '🤔',
+                  label: '思考',
+              },
+              {
+                  value: '🙄',
+                  label: '白眼',
+              },
+              {
+                  value: '😜',
+                  label: '略略略',
+              },
+              {
+                  value: '😲',
+                  label: '呆住',
+              },
+              {
+                  value: '😭',
+                  label: '大哭',
+              },
+              {
+                  value: '🤯',
+                  label: '头炸了',
+              },
+              {
+                  value: '😰',
+                  label: '冷汗',
+              },
+              {
+                  value: '😱',
+                  label: '吓死了',
+              },
+              {
+                  value: '🤪',
+                  label: '略略略',
+              },
+              {
+                  value: '😵',
+                  label: '晕',
+              },
+              {
+                  value: '😡',
+                  label: '愤怒',
+              },
+              {
+                  value: '🥳',
+                  label: '祝贺',
+              },
+              {
+                  value: '🤡',
+                  label: '小丑竟是我',
+              },
+              {
+                  value: '🤫',
+                  label: '嘘~',
+              },
+              {
+                  value: '🐒',
+                  label: '猴',
+              },
+              {
+                  value: '🤭',
+                  label: '笑笑不说话',
+              },
+              {
+                  value: '🐂',
+                  label: '牛',
+              },
+              {
+                  value: '🍺',
+                  label: '啤酒',
+              },
+              {
+                  value: '(=・ω・=)',
+                  label: '',
+              },
+              {
+                  value: '(｀・ω・´)',
+                  label: '',
+              },
+              {
+                  value: '(°∀°)ﾉ',
+                  label: '',
+              },
+              {
+                  value: '←_←',
+                  label: '',
+              },
+              {
+                  value: '→_→',
+                  label: '',
+              },
+              {
+                  value: 'Σ(ﾟдﾟ;)',
+                  label: '',
+              },
+              {
+                  value: '(｡･ω･｡)',
+                  label: '',
+              },
+              {
+                  value: '(-_-#)',
+                  label: '',
+              },
+          ]
+      },
+    // 暗色模式
+    darkMode: {
+      enable: true,
+      autoDark: true,
+      autoLight: false,
+    },
+    // 随笔头图
+    postTopimage: {
+      enable: true,
+    },
+    // 随笔尾图
+    postBottomimage: {
+      enable: false,
+    },
+    // 打赏二维码
+    donation: {
+      enable: false,
+      qrcodes: [],
+    },
+    // 个性签名
+    signature: {
+      enable: true,
+      contents: [ "<b style='color:#ff6b81'>逝者如斯夫</b>.",
+                 "<b style='color:#ff6b81'>不舍昼夜</b>."
+                ],
+    },
+    // 侧边栏二维码
+    qrcode: {
+      enable: false,
+      img: '',
+      desc: '',
+    },
+    // 弹出公告
+    notice: {
+      enable: false,
+      text: [],
+    },
+    // 首页列表图
+    indexListImg: {
+      enable: false,
+    },
+    // 顶部加载进度条
+    topProgress: {
+      enable: true,
+    },
+    // 随笔页尾部签名
+    postSignature: {
+      enable: true,
+      content: [],
+      licenseName: '',
+      licenseLink: '',
+    },
+    // 背景图片或颜色
+    bodyBackground: {
+      enable: true,
+      value: "https://s2.loli.net/2022/08/25/bNMDCaf9ygroZ8I.jpg",
+      opacity: 0.90,
+      repeat: false,
+    },
+    // 弹幕
+    barrage: {
+      enable: false,
+    },
+    // 锁屏
+    lock: {
+      enable: false,
+    },
+    // 自定义链接链接
+    links: [
+      {
+        name: 'Github: GCSG01',
+        link: 'https://github.com/GCSG01',
+      }
+    ],
+  }
+  $.awesCnb(opts)
+</script>
