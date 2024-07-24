@@ -45,12 +45,28 @@
             text-decoration: none; /* 去掉下划线 */
             margin: 0 10px; /* 设置链接之间的间距 */
         }
+        .footer a.special-link {
+            color: #000; /* 默认状态设置链接颜色为黑色 */
+            text-decoration: none; /* 去掉下划线 */
+        }
+        /* 设置已访问状态的链接颜色为黑色 */
+        .footer a.special-link:visited {
+            color: #000;
+        }
+        /* 设置悬停状态的链接颜色为黑色 */
+        .footer a.special-link:hover {
+            color: #000;
+        }
+        /* 设置点击状态的链接颜色为黑色 */
+        .footer a.special-link:active {
+            color: #000000;
+        }
     </style>
 </head>
 <body>
     <h1 style="font-family: 'Comic Sans MS', 'Comic Sans', cursive;">GCSG01 的小站</h1>
+        <p style="text-align: center;">建设中...希望大佬不吝<a href="https://www.luogu.com.cn/chat?uid=1032267" class="special-link">赐教</a></p>
     <div class="footer">
-        <p>建设中...欢迎大佬不吝<a href="https://www.luogu.com.cn/chat?uid=1032267">赐教</a></p>
         <a href="https://www.luogu.com.cn/user/1032267">洛谷</a>
         <a href="https://www.cnblogs.com/GCSG01">cnblogs</a>
         <a href="https://gcsg01.github.io/NBS">方块NBS</a>
@@ -58,3 +74,4 @@
         <a href="#"></a>
     </div>
 </body>
+</html>
