@@ -1,3 +1,5 @@
+/*添加 Latex 公式支持*/
+
 /* styles.css */
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
 
@@ -120,4 +122,9 @@ a:visited {
 
 a:active {
     color: #ff6600; /* 点击时的链接颜色 */
+}
+
+/* 调整MathJax公式的样式 */
+.MathJax {
+    color: #f5f5DC !important; /* 确保公式颜色与内容框字体颜色一致 */
 }
