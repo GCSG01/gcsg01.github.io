@@ -7,6 +7,7 @@ body, html {
     height: 100%;
     font-family: 'Comic Neue', cursive;
 }
+
 .header {
     background-color: #333;
     color: white;
@@ -18,15 +19,18 @@ body, html {
     z-index: 1000;
     border-bottom: 2px solid #575757; /* 分割线 */
 }
+
 .header h1 {
     margin: 0;
     padding: 0;
 }
+
 .header nav {
     display: flex;
     justify-content: space-between;
     margin-top: 5px;
 }
+
 .header nav a {
     color: white;
     text-decoration: none;
@@ -34,9 +38,11 @@ body, html {
     padding: 10px 0;
     transition: background-color 0.3s;
 }
+
 .header nav a:hover {
     background-color: #575757;
 }
+
 .sidebar {
     width: 250px;
     background-color: #333;
@@ -48,9 +54,11 @@ body, html {
     overflow: auto;
     padding-top: 50px; /* 下移侧栏文字 */
 }
+
 .sidebar nav {
     display: block;
 }
+
 .sidebar a {
     padding: 10px 15px;
     text-decoration: none;
@@ -58,9 +66,11 @@ body, html {
     color: white;
     display: block;
 }
+
 .sidebar a:hover {
     background-color: #575757;
 }
+
 .content {
     margin-left: 250px; /* 侧栏的宽度 */
     padding: 20px;
@@ -74,6 +84,7 @@ body, html {
     flex-direction: column;
     gap: 10px; /* 调整子元素之间的间距 */
 }
+
 .content-box {
     background-color: rgba(0, 0, 0, 0.8); /* 半透明的黑色背景 */
     border-radius: 10px; /* 圆角边框 */
@@ -89,4 +100,24 @@ body, html {
     text-shadow: 2px 2px 3px #000000; /* 添加阴影 */
     line-height: 1.7; /* 调整行间距 */
     letter-spacing: 0.7px; /* 调整字间距 */
+}
+
+/* 链接样式 */
+a {
+    color: #f5f5DC; /* 与内容框字体颜色一致 */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffcc00; /* 悬停时的颜色 */
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #d2b48c; /* 访问过的链接颜色 */
+}
+
+a:active {
+    color: #ff6600; /* 点击时的链接颜色 */
 }
