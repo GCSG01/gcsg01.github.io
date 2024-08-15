@@ -48,6 +48,9 @@ body, html {
     overflow: auto;
     padding-top: 50px; /* 下移侧栏文字 */
 }
+.sidebar nav {
+    display: block;
+}
 .sidebar a {
     padding: 10px 15px;
     text-decoration: none;
