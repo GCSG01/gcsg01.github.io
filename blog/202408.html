@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCSG01</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入MathJax库 -->
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']],
+          displayMath: [['$$','$$'], ['\\[','\\]']],
+          processEscapes: true,
+          processEnvironments: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+          TeX: {
+            equationNumbers: { autoNumber: "AMS" },
+            extensions: ["AMSmath.js", "AMSsymbols.js"]
+          }
+        }
+      });
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <h1>GCSG01 的网站</h1>
+        <nav id="header-nav">
+            <a href="https://gcsg01.github.io" class="scroll-link">首页</a>
+            <a href="https://gcsg01.github.io/blog/list" class="scroll-link">博客</a>
+            <a href="https://gcsg01.github.io/about" class="scroll-link">关于</a>
+            <a href="https://gcsg01.github.io/services" class="scroll-link">服务</a>
+        </nav>
+    </div>
+
+    <div class="sidebar">
+        <nav id="sidebar-nav">
+            <!-- 动态生成的导航栏内容将在这里插入 -->
+        </nav>
+    </div>
+
+    <div class="content"> 
+        <div class="content-box">
+            <h1 >2024暑期第二次集训总结(202408)</h1>
+            <h2 id="08.12">08.12</h2>
+            <p>身体不适，请假在家，随便写写，把当天任务写了一下，结果你谷 RMJ 炸了，直接躺平。</p>
+            <br/>
+
+            <h2 id="08.13">08.13</h2>
+            <p>
+                上午原定 9:00-12:00 出去比赛，让我们 8:00 到，到了之后又没事做，直接与同学联机 MC ，后面开考，以为是 csp-j 难度，结果 红+红+下位橙+红,14 分钟秒了。(抽象
+            </p>
+            <p>
+                回到机房赶上思维训练，看了看题目，没时间写了，随便写了写就交了。
+                <p></p>
+                下午补题，先把 <a herf="https://www.luogu.com.cn/problem/AT_abc216_d">T1</a> 写了，一个拓扑排序的变形题，把取小球的条件转化一下就好了。
+                看 <a herf="https://www.luogu.com.cn/problem/AT_dp_r">T4</a> 过的人多，去看了看 T4 ，首先把裸的 DP 方程想出来，发现可以用矩阵快速幂加速地推，把板子一套 A 了。
+            </p>
+            <br/>
+
+            <h2 id="08.14">08.14</h2>
+            <p>
+                上午 CSP-S 模拟，T1 没什么思路，随便打了个暴力，T2 看了看，感觉和 23 年的 CSP-J T2 有点像，开始画图验证想法，后来发现好像可行，就写了个贪心。T3 忘了，T4 是个图上问题，但只想到了无解与无穷解，就没打。
+
+                中午出成绩，T1 一堆人暴力 100，纷纷吐槽 p**k 的大水数据，T2假了，后面忘了，就这样奇迹般的拿了个 rk3，(抽象*2。
+            </p>
+            <br/>
+
+            <h2 id="08.15">08.15</h2>
+            <p>
+                由于你谷的问题，在 Vjudge 上做题，题单链接：<a herf="https://vjudge.net/contest/648631">https://vjudge.net/contest/648631</a>
+                <p></p>
+                大致看了一遍，是 DP 的题单，T1 是个比较简单的树形 DP，T3 多重背包板子题，T4 主要是状态的设定，我是用 \(f_{i,j}\) 表示以 \(i\) 结尾公差为 \(j\) 的等差数列个数，把状态一写，再跟着题目一步一步推，方程就出来了。T5 的方程其实还挺好想的，只是要注意最后答案的统计范围会超出 \(n\)。
+            </p>
+            <br/>
+
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
