@@ -1,0 +1,130 @@
+/*添加 Latex 公式支持*/
+
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Comic Neue', cursive;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 2px solid #575757; /* 分割线 */
+}
+
+.header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    flex: 1;
+    padding: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.header nav a:hover {
+    background-color: #575757;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 60px; /* 顶栏的高度 */
+    left: 0;
+    height: calc(100% - 60px); /* 减去顶栏的高度 */
+    overflow: auto;
+    padding-top: 50px; /* 下移侧栏文字 */
+}
+
+.sidebar nav {
+    display: block;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.content {
+    margin-left: 250px; /* 侧栏的宽度 */
+    padding: 20px;
+    margin-top: 60px; /* 顶栏的高度 */
+    background-image: url('img1.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* 固定背景图片 */
+    min-height: calc(100vh - 60px); /* 减去顶栏的高度 */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* 调整子元素之间的间距 */
+}
+
+.content-box {
+    background-color: rgba(0, 0, 0, 0.8); /* 半透明的黑色背景 */
+    border-radius: 10px; /* 圆角边框 */
+    padding: 20px; /* 内边距 */
+    width: 80%; /* 宽度 */
+    max-width: 800px; /* 最大宽度 */
+    text-align: justify; /* 文字两端对齐 */
+    margin-left: auto; /* 向右移动 */
+    margin-right: auto; /* 向右移动 */
+    font-size: 20px; /* 增大字体大小 */
+    color: #f5f5DC; /* 改变字体颜色为米黄色 */
+    font-weight: bold; /* 使用粗体 */
+    text-shadow: 2px 2px 3px #000000; /* 添加阴影 */
+    line-height: 1.7; /* 调整行间距 */
+    letter-spacing: 0.7px; /* 调整字间距 */
+}
+
+/* 链接样式 */
+a {
+    color: #f5f5DC; /* 与内容框字体颜色一致 */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffcc00; /* 悬停时的颜色 */
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #d2b48c; /* 访问过的链接颜色 */
+}
+
+a:active {
+    color: #ff6600; /* 点击时的链接颜色 */
+}
+
+/* 调整MathJax公式的样式 */
+.MathJax {
+    color: #f5f5DC !important; /* 确保公式颜色与内容框字体颜色一致 */
+}
