@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCSG01</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入MathJax库 -->
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$','$'], ['\$','\$']],
+          displayMath: [['$$','$$'], ['\$','\$']],
+          processEscapes: true,
+          processEnvironments: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+          TeX: {
+            equationNumbers: { autoNumber: "AMS" },
+            extensions: ["AMSmath.js", "AMSsymbols.js"]
+          }
+        }
+      });
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>GCSG01 的网站</h1>
+        <nav id="header-nav">
+            <a href="https://gcsg01.github.io" class="scroll-link">首页</a>
+            <a href="https://gcsg01.github.io/blog/list" class="scroll-link">博客</a>
+            <a href="https://gcsg01.github.io/about" class="scroll-link">关于</a>
+            <a href="https://gcsg01.github.io/services" class="scroll-link">服务</a>
+        </nav>
+    </div>
+
+    <div class="sidebar">
+        <nav id="sidebar-nav">
+            <!-- 动态生成的导航栏内容将在这里插入 -->
+        </nav>
+    </div>
+
+    <div class="content"> 
+        <div class="content-box">
+			<a href="https://www.cnblogs.com/GCSG01/p/18309438">更好的观看体验</a>
+
+            <h2>1. 隐藏和显示控制台窗口</h2>
+            <p><code>WM_SYSCOMMAND</code>：系统命令消息。</p>
+            <p><code>SC_MINIMIZE</code>：将窗口最小化。</p>
+            <p><code>SC_RESTORE</code>：将窗口还原。</p>
+            <pre><code>#include &lt;windows.h&gt;
+
+int main()
+{
+    HWND hWnd = GetConsoleWindow();
+    ::SendMessage(hWnd, WM_SYSCOMMAND, SC_MINIMIZE, NULL);
+    //程序运行至此处后，控制台窗口就会隐藏
+    ::SendMessage(hWnd, WM_SYSCOMMAND, SC_RESTORE, NULL);
+    return 0;
+}</code></pre>
+
+            <h2>2. 控制窗口大小</h2>
+            <pre><code>system("mode con cols=30 lines=20");</code></pre>
+            <p>\(cols\)为宽度，\(lines\)为高度。</p>
+            <p>⚠ 注意：$cols>=15,lines>=1$</p>
+
+            <h2>3. system用法</h2>
+            <pre><code>system("cls"); //清空
+system("pause"); //请按任意键继续
+system("color 1"); //背景颜色:设置默认的控制台前景和背景颜色。</code></pre>
+
+            <h2>4. system颜色</h2>
+            <p>颜色属性由两个十六进制数字指定 -- 第一个对应于背景，第二个对应于前景。每个数字可以为以下任何值:</p>
+            <pre><code>0 = 黑色       8 = 灰色
+1 = 蓝色       9 = 淡蓝色
+2 = 绿色       A = 淡绿色
+3 = 浅绿色     B = 淡浅绿色
+4 = 红色       C = 淡红色
+5 = 紫色       D = 淡紫色
+6 = 黄色       E = 淡黄色
+7 = 白色       F = 亮白色</code></pre>
+
+            <h2>5. 关机程序</h2>
+            <pre><code>#include&lt;bits/stdc++.h&gt;
+using namespace std;
+int main (void) 
+{
+    system("Shutdown.exe -s -t 10");
+}</code></pre>
+            <p>\(10\) 为时长，以秒计数。可以自行更改。</p>
+            <h3>解除关机</h3>
+            <pre><code>system("shutdown -a");</code></pre>
+
+            <h2>6. 时停</h2>
+            <p>用法：（单位：毫秒ms）</p>
+            <pre><code>Sleep(s); //时停s毫秒（s/1000秒）</code></pre>
+            <p>可以得到一个神奇的输出函数：</p>
+            <pre><code>void slowout(long long x)
+{
+    long long f;
+    while(x!=0)
+    {
+        f=f*10+x%10;
+        x/=10;
+    }
+    while(f!=0) cout<<f%10,Sleep(100),f/=10;
+}
+void *slowout(string x)
+{
+    for(int i=0;i&lt;x.length();i++)
+    {
+        cout<<x[i];
+        Sleep(100);
+    }
+}</code></pre>
+
+            <h2>7. 随机数</h2>
+            <p>先写上头文件：</p>
+            <pre><code>#include&lt;ctime&gt; or #include&lt;bits/stdc++.h&gt;</code></pre>
+            <p>在main第一句话写：</p>
+            <pre><code>int main()
+{
+    srand(time(0));
+    //这句话的作用是载入随机数种子为当前时间，因为rand生成的是伪随机数
+    ……
+}</code></pre>
+            <p>后面调用：</p>
+            <pre><code>rand()%k;</code></pre>
+            <p>表示生成一个 \(0\) ~ \((k-1)\) 的随机<strong>整数</strong>。</p>
+            <p>进阶:</p>
+            <pre><code>a+rand()%(b-a+1);</code></pre>
+            <p>表示生成一个 \(a\) ~ \(b\)之间的随机<strong>整数</strong>。</p>
+
+            <h2>8. 控制鼠标指针</h2>
+            <pre><code>SetCursorPos(x,y);</code></pre>
+            <p>将鼠标指针移至 \(x,y\) 的位置</p>
+            <p>所以，我们便可以结合随机数制成一个好玩的东西。</p>
+            <pre><code>#include&lt;bits/stdc++.h&gt;
+#include&lt;ctime&gt;
+#include&lt;windows.h&gt;
+using namespace std;
+int main()
+{
+    srand(time(0));
+    while(1)
+    {
+        int x,y;x=rand()%1000+1,y=rand()%1000+1;
+        SetCursorPos(x,y);
+    }
+    return 0;
+}</code></pre>
+            <p><strong>警告:运行后鼠标指针会乱动，此时千万不要乱点</strong></p>
+            <p>因为如果你把控制台点到后台去了，那么，恭喜你，你只能关机了。</p>
+
+            <p><a href="https://www.luogu.com.cn/paste/ns6z5wus">坑好友必备(慎用!!!)</a></p>
+            <p><a href="https://cloud.tencent.com/developer/article/2125259">深修推荐</a></p>
+            <p><a href="https://www.luogu.com.cn/blog/z1e2k3i4/post-wen-zhang-wan-jie-bian-ni-zi-ji-di-you-hu-post">游戏制作指南 (c++)</a></p>
+            <p>特别鸣谢： <a href="https://www.luogu.com.cn/user/752953">sLMxf(so_langman_xiaoFeng)</a></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
