@@ -106,18 +106,18 @@ body, html {
 
 /* 链接样式 */
 a {
-    color: #f5f5DC; /* 与内容框字体颜色一致 */
+    color: #00ffbf; /* 与内容框字体颜色一致 */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #ffcc00; /* 悬停时的颜色 */
+    color: #5ff708; /* 悬停时的颜色 */
     text-decoration: underline;
 }
 
 a:visited {
-    color: #d2b48c; /* 访问过的链接颜色 */
+    color: #d000fa; /* 访问过的链接颜色 */
 }
 
 a:active {
