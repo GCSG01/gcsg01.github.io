@@ -5,8 +5,8 @@
   <meta name="Volantis" content="6.0.2">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://gcsg0.github.io/archives/2025/11/"/>
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="http://gcsg0.github.io/2025/11/20/同余最短路/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,19 +34,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Archive: 2025&#x2F;11 - GCSG01&#39;s Blogs</title>
-  <meta name="keywords" content="Blogs, Technology, Hexo, Programming, Life">
+  <title>同余最短路 - GCSG01&#39;s Blogs</title>
+  <meta name="keywords" content=", 学习笔记,Blogs, Technology, Hexo, Programming, Life">
   <meta desc name="description" content="My Blogs - GCSG01 - GCSG01&#39;s Blogs">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="GCSG01&#39;s Blogs">
-<meta property="og:url" content="http://gcsg0.github.io/archives/2025/11/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="同余最短路">
+<meta property="og:url" content="http://gcsg0.github.io/2025/11/20/%E5%90%8C%E4%BD%99%E6%9C%80%E7%9F%AD%E8%B7%AF/index.html">
 <meta property="og:site_name" content="GCSG01&#39;s Blogs">
-<meta property="og:description" content="My Blogs">
+<meta property="og:description" content="顾名思义，建立在同余基础上的最短路。一般来讲，用于问凑数之类的问题时用，基本思想为 若有 $ax&#x3D;b$，求 $b$ 的数量，则 $ax&#x3D;b+kx$ 均为可行解。 1.跳楼机题目原址 如果你现在能到达第 $i$ 层，则 $i+kx$ 层均可到达，所以我们考虑在对 $x$ 取模的意义下建立多个点表示 $0-x$，从 $i$ 号点向 $(i+y)%x$ 与 $(i+z)%x$ 连边，">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2025-11-20T02:38:00.000Z">
+<meta property="article:modified_time" content="2025-11-21T09:23:13.472Z">
 <meta property="article:author" content="GCSG01">
-<meta property="article:tag" content="Blogs, Technology, Hexo, Programming, Life">
+<meta property="article:tag" content="学习笔记">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2264,7 +2266,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </script>
 
   
-    <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"GCSG01's Blogs","url":"http://gcsg0.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"GCSG01","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://gcsg0.github.io/","sameAs":["https://github.com/volantis-x"],"description":"My Blogs"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://gcsg0.github.io/","name":"GCSG01's Blogs"}},{"@type":"ListItem","position":2,"item":{"@id":"http://gcsg0.github.io/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"http://gcsg0.github.io/archives/2025/","name":"2025年"}},{"@type":"ListItem","position":4,"item":{"@id":"http://gcsg0.github.io/archives/2025/11/","name":"11月"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"GCSG01's Blogs","url":"http://gcsg0.github.io/","keywords":"Blogs, Technology, Hexo, Programming, Life","description":"My Blogs","author":{"@type":"Person","name":"GCSG01","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://gcsg0.github.io/","description":"My Blogs"},"publisher":{"@type":"Organization","name":"GCSG01's Blogs","url":"http://gcsg0.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://gcsg0.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"My Blogs","inLanguage":"zh-cn","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"GCSG01","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://gcsg0.github.io/"},"publisher":{"@type":"Organization","name":"GCSG01's Blogs","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+    <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"GCSG01's Blogs","url":"http://gcsg0.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"GCSG01","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://gcsg0.github.io/","sameAs":["https://github.com/volantis-x"],"description":"My Blogs"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://gcsg0.github.io/","name":"GCSG01's Blogs"}},{"@type":"ListItem","position":3,"item":{"@id":"http://gcsg0.github.io/2025/11/20/同余最短路/","name":"同余最短路"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"GCSG01's Blogs","url":"http://gcsg0.github.io/","keywords":"Blogs, Technology, Hexo, Programming, Life","description":"My Blogs","author":{"@type":"Person","name":"GCSG01","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://gcsg0.github.io/","description":"My Blogs"},"publisher":{"@type":"Organization","name":"GCSG01's Blogs","url":"http://gcsg0.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://gcsg0.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"同余最短路","description":"My Blogs","inLanguage":"zh-cn","mainEntityOfPage":{"@type":"WebPage","@id":"http://gcsg0.github.io/2025/11/20/%E5%90%8C%E4%BD%99%E6%9C%80%E7%9F%AD%E8%B7%AF/"},"author":{"@type":"Person","name":"GCSG01","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://gcsg0.github.io/"},"publisher":{"@type":"Organization","name":"GCSG01's Blogs","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://gcsg0.github.io/2025/11/20/%E5%90%8C%E4%BD%99%E6%9C%80%E7%9F%AD%E8%B7%AF/","wordCount":0,"datePublished":"2025-11-20T02:38:00.000Z","dateModified":"2025-11-21T09:23:13.472Z","keywords":"学习笔记","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
   
   <!-- import head_end begin -->
   <!-- import head_end end -->
@@ -2547,7 +2549,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl.ejs -->
-      <div id="half" class='cover-wrapper  dock' style="display: ;">
+      <div id="half" class='cover-wrapper post dock' style="display: ;">
         
   <div id="parallax-window"></div>
 
@@ -2624,203 +2626,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://gcsg0.github.io/2025/11/21/简单数学与位运算/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="GCSG01&#39;s Blogs">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="name" content="简单数学与位运算">
-    <meta itemprop="description" content="My Blogs">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/11/21/%E7%AE%80%E5%8D%95%E6%95%B0%E5%AD%A6%E4%B8%8E%E4%BD%8D%E8%BF%90%E7%AE%97/"  itemprop="url">
-        简单数学与位运算
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        本文经 @sLMxf 转载：
-整除和余数
-以下 $x、y、a$ 均为整数。  
-存在整数 $k$，使得 $x &#x3D; ky$，则有 $y|x$（ $y$ 整除 $x$ ），若 $y&gt;0$ 则称 $x$ 是 $y$ 的倍数，$y$ 是 $x$ 的因数。  
-如果 $x &#x3D; ky + a$，则称 $a$ 为 $x&#x2F;y$ 的余数，写作 $a &#x3D; x % y...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-11-21T17:23:53+08:00">2025-11-21</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/11/21/%E7%AE%80%E5%8D%95%E6%95%B0%E5%AD%A6%E4%B8%8E%E4%BD%8D%E8%BF%90%E7%AE%97/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://gcsg0.github.io/2025/11/21/启发式合并学习笔记/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="GCSG01&#39;s Blogs">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="name" content="启发式合并学习笔记">
-    <meta itemprop="description" content="My Blogs">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/11/21/%E5%90%AF%E5%8F%91%E5%BC%8F%E5%90%88%E5%B9%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"  itemprop="url">
-        启发式合并学习笔记
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        写 P6623 [省选联考 2020 A 卷] 树 时发现根本不会，强制恶补。
-如有不足，还请提出。
-1.是什么请出老朋友并查集，并查集中有个优化为按两个并查集高度大小贪心的合并。
-1234567void merge(int x,int y)&#123;	int fax=find(x),fay=find(y);	if(siz[fax]&lt;siz[fay])swap(fax,fay);//...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-11-21T17:18:59+08:00">2025-11-21</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/11/21/%E5%90%AF%E5%8F%91%E5%BC%8F%E5%90%88%E5%B9%B6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://gcsg0.github.io/2025/11/20/莫比乌斯反演学习笔记—数论/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="GCSG01&#39;s Blogs">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="name" content="莫比乌斯反演学习笔记">
-    <meta itemprop="description" content="My Blogs">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/11/20/%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E6%95%B0%E8%AE%BA/"  itemprop="url">
-        莫比乌斯反演学习笔记
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        前言： 作者初学数论，如有不足还请指出。
-基本概念定义$$\mu(x)&#x3D;\begin{cases}  1&amp;n&#x3D;1或n 无平方因子且质因子个数为偶数\  0&amp;n 含有平方因子\  -1&amp;n 无平方因子且质因子个数为奇数\end{cases}$$
-核心性质都挺巧妙的
-
-1.莫⽐乌斯反演$$\sum_{d|n}\mu(d)&#x3D;[n&#x3D;1]...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-11-20T13:50:49+08:00">2025-11-20</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2025/11/20/%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E6%95%B0%E8%AE%BA/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="http://gcsg0.github.io/2025/11/20/同余最短路/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="GCSG01&#39;s Blogs">
@@ -2830,59 +2636,231 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="My Blogs">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025/11/20/%E5%90%8C%E4%BD%99%E6%9C%80%E7%9F%AD%E8%B7%AF/"  itemprop="url">
+    
+    
+      <h1 class="title" itemprop="name headline">
         同余最短路
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        顾名思义，建立在同余基础上的最短路。一般来讲，用于问凑数之类的问题时用，基本思想为 若有 $ax&#x3D;b$，求 $b$ 的数量，则 $ax&#x3D;b+kx$ 均为可行解。
-1.跳楼机题目原址
-如果你现在能到达第 $i$ 层，则 $i+kx$ 层均可到达，所以我们考虑在对 $x$ 取模的意义下建立多个点表示 $0-x$，从 $i$ 号点向 $(i+y)%x$ 与 $(i+z)%x$ ...
-      
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' target="_blank" href="https://gcsg01.github.io" rel="nofollow noopener">
+    <img itemprop="image" src="https://avatars.githubusercontent.com/u/154341303" class="lazyload" data-srcset="https://avatars.githubusercontent.com/u/154341303" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">GCSG01</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2025-11-20T10:38:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2025年11月20日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p>顾名思义，建立在同余基础上的最短路。一般来讲，用于问凑数之类的问题时用，基本思想为 若有 $ax&#x3D;b$，求 $b$ 的数量，则 $ax&#x3D;b+kx$ 均为可行解。</p>
+<h3 id="1-跳楼机"><a href="#1-跳楼机" class="headerlink" title="1.跳楼机"></a>1.跳楼机</h3><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3403">题目原址</a></p>
+<p>如果你现在能到达第 $i$ 层，则 $i+kx$ 层均可到达，所以我们考虑在对 $x$ 取模的意义下建立多个点表示 $0-x$，从 $i$ 号点向 $(i+y)%x$ 与 $(i+z)%x$ 连边，边权分别为 $y,z$。然后对每个点跑一遍以 $0$ 为源点的最短路，求出每个 $dis[i]$。<br>那 $dis[i]$ 有什么用呢？这表示了对 $x$ 取模后为 $i$ 的最小可达楼层，我们便可以据此算出取模后为 $i$ 的楼层对答案的贡献：$(h-dis[i])&#x2F;x+1$。具体细节参照代码。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> int unsigned long long</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">1e5</span><span class="number">+5</span>;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">node</span>&#123;</span><br><span class="line">	<span class="type">int</span> v,w;</span><br><span class="line">&#125;;</span><br><span class="line">vector&lt;node&gt;a[N];</span><br><span class="line"><span class="type">int</span> f[N];</span><br><span class="line"><span class="type">int</span> dis[N];</span><br><span class="line"><span class="type">int</span> h,x,y,z;</span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">	cin.<span class="built_in">tie</span>(<span class="number">0</span>);cout.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">	cin&gt;&gt;h&gt;&gt;x&gt;&gt;y&gt;&gt;z;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;x;i++)</span><br><span class="line">		a[i].<span class="built_in">push_back</span>((node)&#123;(i+y)%x,y&#125;),a[i].<span class="built_in">push_back</span>((node)&#123;(i+z)%x,z&#125;);</span><br><span class="line">	<span class="built_in">memset</span>(dis,<span class="number">0x3f</span>,<span class="built_in">sizeof</span>(dis));</span><br><span class="line">	dis[<span class="number">1</span>%x]=<span class="number">1</span>;</span><br><span class="line">	queue&lt;<span class="type">int</span>&gt;q;</span><br><span class="line">	q.<span class="built_in">push</span>(<span class="number">1</span>);</span><br><span class="line">	<span class="keyword">while</span>(!q.<span class="built_in">empty</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> u=q.<span class="built_in">front</span>();</span><br><span class="line">		q.<span class="built_in">pop</span>();</span><br><span class="line">		f[u]=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;a[u].<span class="built_in">size</span>();i++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="type">int</span> v=a[u][i].v,w=a[u][i].w;</span><br><span class="line">			<span class="keyword">if</span>(dis[v]&gt;dis[u]+w)</span><br><span class="line">			&#123;</span><br><span class="line">				dis[v]=dis[u]+w;</span><br><span class="line">				<span class="keyword">if</span>(!f[v])q.<span class="built_in">push</span>(v),f[v]=<span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;x;i++)</span><br><span class="line">		<span class="keyword">if</span>(dis[i]&lt;=h)ans+=(h-dis[i])/x<span class="number">+1</span>;</span><br><span class="line">	cout&lt;&lt;ans;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="2-墨墨的等式"><a href="#2-墨墨的等式" class="headerlink" title="2.墨墨的等式"></a>2.墨墨的等式</h3><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P2371">题目原址</a><br>先将题目所求的 $l-r$ 转换为 $r$ 与 $l-1$ 的答案相减，相对上一题而言，这一题将 $x,y,z$ 的数量增多了，所以我们任选一个非零的 $a_i$，以它作为 $x$ 进行上一题的步骤。答案的统计同上。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> int long long</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">5e5</span><span class="number">+5</span>;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">node</span>&#123;</span><br><span class="line">	<span class="type">int</span> v,w;</span><br><span class="line">&#125;;</span><br><span class="line">vector&lt;node&gt;e[N];</span><br><span class="line"><span class="type">int</span> a[N];</span><br><span class="line"><span class="type">int</span> f[N];</span><br><span class="line"><span class="type">int</span> dis[N];</span><br><span class="line"><span class="type">int</span> h,x,y,z;</span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	ios::<span class="built_in">sync_with_stdio</span>(<span class="number">0</span>);</span><br><span class="line">	cin.<span class="built_in">tie</span>(<span class="number">0</span>);cout.<span class="built_in">tie</span>(<span class="number">0</span>);</span><br><span class="line">	<span class="type">int</span> n,l,r;</span><br><span class="line">	cin&gt;&gt;n&gt;&gt;l&gt;&gt;r;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		cin&gt;&gt;a[i];</span><br><span class="line">		<span class="keyword">if</span>(!a[i])n--,i--;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span>(!n)<span class="keyword">return</span> cout&lt;&lt;<span class="string">&quot;0&quot;</span>,<span class="number">0</span>;</span><br><span class="line">	<span class="built_in">sort</span>(a<span class="number">+1</span>,a+n<span class="number">+1</span>);</span><br><span class="line">	<span class="type">int</span> x=a[<span class="number">1</span>];</span><br><span class="line">	<span class="built_in">memset</span>(dis,<span class="number">0x3f</span>,<span class="built_in">sizeof</span>(dis));</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">2</span>;i&lt;=n;i++)</span><br><span class="line">		<span class="keyword">if</span>(a[i]!=a[i<span class="number">-1</span>])</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j=<span class="number">0</span>;j&lt;x;j++)</span><br><span class="line">				e[j].<span class="built_in">push_back</span>((node)&#123;(j+a[i])%x,a[i]&#125;);</span><br><span class="line">	dis[<span class="number">0</span>]=<span class="number">0</span>;</span><br><span class="line">	queue&lt;<span class="type">int</span>&gt;q;</span><br><span class="line">	q.<span class="built_in">push</span>(<span class="number">0</span>);</span><br><span class="line">	<span class="keyword">while</span>(!q.<span class="built_in">empty</span>())</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> u=q.<span class="built_in">front</span>();</span><br><span class="line">		q.<span class="built_in">pop</span>();</span><br><span class="line">		f[u]=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;e[u].<span class="built_in">size</span>();i++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="type">int</span> v=e[u][i].v,w=e[u][i].w;</span><br><span class="line">			<span class="keyword">if</span>(dis[v]&gt;dis[u]+w)</span><br><span class="line">			&#123;</span><br><span class="line">				dis[v]=dis[u]+w;</span><br><span class="line">				<span class="keyword">if</span>(!f[v])q.<span class="built_in">push</span>(v),f[v]=<span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">	l--;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;x;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(dis[i]&lt;=r)ans+=(r-dis[i])/x<span class="number">+1</span>;</span><br><span class="line">		<span class="keyword">if</span>(dis[i]&lt;=l)ans-=(l-dis[i])/x<span class="number">+1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	cout&lt;&lt;ans;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<hr>
+<p>由于作者菜菜的，有问题<strong>不吝赐教</strong>。</p>
+
+  </div>
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-11-20T10:38:00+08:00">2025-11-20</time>
-        
-      </div>
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2025/11/20/%E5%90%8C%E4%BD%99%E6%9C%80%E7%9F%AD%E8%B7%AF/' itemprop="url">
-            Read More
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-11-21T17:23:13+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2025年11月21日</p>
+  </a>
 </div>
 
-          </div>
         
       
-    
-  </section>
+        
+          
   
-    
+  
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>学习笔记</p></a></div>
+  <span hidden itemprop="keywords">学习笔记</span>
   
 
 
-	
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://gcsg0.github.io/2025/11/20/%E5%90%8C%E4%BD%99%E6%9C%80%E7%9F%AD%E8%B7%AF/&title=同余最短路 - GCSG01's Blogs&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://gcsg0.github.io/2025/11/20/%E5%90%8C%E4%BD%99%E6%9C%80%E7%9F%AD%E8%B7%AF/&title=同余最短路 - GCSG01's Blogs&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://gcsg0.github.io/2025/11/20/%E5%90%8C%E4%BD%99%E6%9C%80%E7%9F%AD%E8%B7%AF/&title=同余最短路 - GCSG01's Blogs&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2025/11/20/%E8%8E%AB%E6%AF%94%E4%B9%8C%E6%96%AF%E5%8F%8D%E6%BC%94%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E6%95%B0%E8%AE%BA/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>莫比乌斯反演学习笔记</p>
+          <p class='content'>前言： 作者初学数论，如有不足还请指出。
+基本概念定义$$\mu(x)&#x3D;\begin{cases}  1&amp;n&#x3D;1或n 无平方因子且质因子个数为偶数\  0&amp;n...</p>
+        </a>
+      
+      
+        <a class='next' href='/2025/01/16/%E5%88%86%E5%B1%82%E5%9B%BE/'>
+          <p class='title'>分层图<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>对于一些有限制次数的改变图上的边的题目，将原图复制若干份，也就是若干层，每层之间用特殊的边（题目给出的条件）连接起来，然后再跑最短路。
+1.P4568 [JLOI2011] 飞行路线$k$ 条航...</p>
+        </a>
+      
+    </div>
+  
+  <!-- 文章推荐 -->
+  
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2025/11/20/%E5%90%8C%E4%BD%99%E6%9C%80%E7%9F%AD%E8%B7%AF/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2891,112 +2869,48 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
     
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/Logo-NavBar@3x.png' alt='avatar' />
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">GCSG01's Blogs</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" style="font-size: 14px; color: #999">学习笔记</a>
-    </div>
-  </section>
-
-
-    
-  
-
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E8%B7%B3%E6%A5%BC%E6%9C%BA"><span class="toc-text">1.跳楼机</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%A2%A8%E5%A2%A8%E7%9A%84%E7%AD%89%E5%BC%8F"><span class="toc-text">2.墨墨的等式</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3024,13 +2938,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3497,6 +3412,73 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- pjax 标签必须存在于所有页面 否则 pjax error -->
 <pjax>
+
+        <script>
+  // https://github.com/theme-next/hexo-theme-next/blob/master/layout/_third-party/math/mathjax.swig
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = "https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js";
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    // 文章章节标题不能为 “MathJax” ，否则会报错。
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typesetPromise();
+  }
+</script>
+
+        <script>
+  // https://www.micdz.cn/article/katex-on-volantis/
+  if (typeof renderMathInElement == "undefined") {
+    volantis.css("https://cdn.bootcdn.net/ajax/libs/KaTeX/0.15.2/katex.min.css")
+    function pjax_katex() {
+      volantis.js("https://cdn.bootcdn.net/ajax/libs/KaTeX/0.15.2/contrib/auto-render.min.js").then(()=>{
+        renderMathInElement(document.body);
+      })
+    }
+    volantis.js("https://cdn.bootcdn.net/ajax/libs/KaTeX/0.15.2/katex.min.js").then(pjax_katex)
+    volantis.pjax.push(pjax_katex)
+  }
+</script>
+
 
 </pjax>
 
