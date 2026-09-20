@@ -190,26 +190,35 @@ $$\det(A)=\sum_{p \in S_n} \text{sign}(p)\prod_{i=1}^n a_{i,p_i}$$
 $ det(AB)=\sum_{S}{det(A_S)det(B_S)}$，通俗来讲，对于 $n\times m$ 的矩阵 $A$ 和一个 $m\times n$ 的矩阵 $B$，相乘会得到一个 $n\times n$ 的矩阵，考虑从 $A$ 中选出 $n$ 列组成一个 $n\times n$ 的矩阵 $A'$，从 $B$ 中选出 $n$ 行组成一个 $n\times n$ 的矩阵 $B'$，则 $det(AB)$ 就会等于所有这样的 $A',B'$ 的 det 的乘积之和。具体证明就是拆拆爆，左右两边全部拆拆拆，搞成一样的就完了。
 
 证明中会用到一个很 nb 的trick(至少我认为): 对于形如下图的连边，我们把中间的那组点去掉，使左右两部分点直接相连，连边所产生的 **边** 之间的 **交点** 的 **奇偶性** 不变。(浅蓝色边为原有边，深蓝色边为新增边)
-![img](https://img2024.cnblogs.com/blog/3357233/202607/3357233-20260714200536025-1683309967.png)
+![img](/_posts/math/linear-cb.png)
+
 
 ### 生成树计数
-定义关联矩阵 $G=(g_{ij})_{n\times m}$，满足 $g_{u_i,i}=1,G_{v_i,i}=-1$，注意到每一列恰有一个 1 和一个 -1，显然这个矩阵并不满秩。考虑删去其中的任意一行得到矩阵 $A\in \R^{(n-1)\times m}$，对于大小为 $n-1$ 的边集 $S$ 所对的矩阵为 $A_S$，则有：
-$$
-det^2(A_S)=
-\begin{cases}
-1,& \text{s为生成树}\\
-0,& \text{else}
-\end{cases}
-$$
-因此有：$\sum_S{det^2(A_S)}=\text{生成树个数}$。定义 $A_T$ 为矩阵 $A$ 的转置矩阵（旋转九十度后的矩阵），显然有 $det(A)=det(A_T)$，则 $det^2(A_S)=det(A_S)det(A_S^T)$，由 $Cauchy-Binet$ 可得：
+### 生成树计数
+
+定义关联矩阵 $G=(g_{ij})_{n\times m}$，满足 $g_{u_i,i}=1, g_{v_i,i}=-1$，注意到每一列恰有一个 1 和一个 -1，显然这个矩阵并不满秩。考虑删去其中的任意一行得到矩阵 $A\in \mathbb{R}^{(n-1)\times m}$，对于大小为 $n-1$ 的边集 $S$ 所对的矩阵为 $A_S$，则有：
 
 $$
-\sum_S{det(A_S)det(A_S^T)}=det(AA^T)
+\det^2(A_S) =
+\left\{
+\begin{array}{ll}
+1, & \text{S为生成树} \\
+0, & \text{else}
+\end{array}
+\right.
 $$
 
-所以 $det(AA^T)=\text{生成树个数}$。  注意到 $(AA^T)_{ii}=d_i$。在此基础上，拉普拉斯矩阵 $L(G)=D(G)-A(G)$,其中 $D(G)$ 为有向图 $G$ 的每个点的出度的对角矩阵，$A(G)$ 则表示邻接矩阵，如果有权就当成有 $val$ 条重边。（当然，边权也可以是函数或多项式）  
+因此有：$\sum_S \det^2(A_S) = \text{生成树个数}$。定义 $A_T$ 为矩阵 $A$ 的转置矩阵（旋转九十度后的矩阵），显然有 $\det(A)=\det(A_T)$，则 $\det^2(A_S)=\det(A_S)\det(A_S^T)$，由 Cauchy-Binet 公式可得：
+
+$$
+\sum_S \det(A_S)\det(A_S^T) = \det(AA^T)
+$$
+
+所以 $\det(AA^T) = \text{生成树个数}$。
+
+注意到 $(AA^T)_{ii}=d_i$。在此基础上，拉普拉斯矩阵 $L(G)=D(G)-A(G)$，其中 $D(G)$ 为有向图 $G$ 的每个点的出度的对角矩阵，$A(G)$ 则表示邻接矩阵，如果有权就当成有 $val$ 条重边。（当然，边权也可以是函数或多项式）
+
 然后我们有 $L'=AA^T$，其中 $L'$ 为将 $L$ 删去任意一行一列后的矩阵。
-
 #### 例题
 ##### [P4336 [SHOI2016] 黑暗前的幻想乡](https://www.luogu.com.cn/problem/P4336)
 $\small{Date:\text{2026/07/13}}$
